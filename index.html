@@ -1,9 +1,3 @@
-
-<?php 
-include 'data.php';
-// var_dump($dischi);
-
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,38 +10,46 @@ include 'data.php';
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
   <body>
-   
+    <div id="app">
       <div class="header">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/2048px-Spotify_App_Logo.svg.png"
           alt=""
           class="img1"
         />
-         <select name="" id="" >
-            <option value="">All</option>
-            <option></option>
-
+        <select name="" id="">
+          <option value="">All</option>
+          <option></option>
         </select>
-
-        <?php 
-          include __DIR__.'../partials/card.php'; 
-
-        ?>
-      
-      
-      
-      
       </div>
 
-      
+      <main class="bg-c">
+            <div class="container">
+                    <div class="row d-flex">
+                        
+                        <div class="col-2">
+                            <div class="card my-5 text-center">
+                                <img class="img2" src=" " alt=""  class="w-50">
+                                <h4> </h4>
+                                <div class="sub"></div>
+                                <div class="sub"></div>
+                            </div>
+                            
+                        </div>
+                    
+                    </div>
+                </div>
 
-      
-    
+            </div>
+      </main>
+    </div>
+
+    <script src="./script/script.js"></script>
   </body>
 </html>
