@@ -22,9 +22,9 @@
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/2048px-Spotify_App_Logo.svg.png"
           alt=""
           class="img1"/>
-        <select name="categories" id="categories">
+        <select name="categories" id="categories" @change="search()" v-model="selectedCategory">
           <option value="">All</option>
-          <option value=""></option>
+          <option :value="cat" v-for="(cat,index) in categories" :key="index">{{cat}}</option>
         </select>
       </div>
 

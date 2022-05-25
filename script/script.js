@@ -3,18 +3,28 @@ const app = new Vue({
   data: {
     dischi: [],
     categories: [],
+    selectedCategory: "",
   },
-  methods: {},
-  mounted() {
-    axios.get("server.php").then((res) => {
-      //   console.log(res);
-      this.dischi = res.data;
-      //   console.log(this.dischi);
-      this.dischi.forEach((disco) => {
-        if (!this.categories.includes(disco.genre)) {
-          this.categories.push(disco.genre);
-        }
+  methods: {
+    getData() {
+      axios.get("server.php").then((res) => {
+        //   console.log(res);
+        this.dischi = res.data;
+        //   console.log(this.dischi);
+        this.dischi.forEach((disco) => {
+          if (!this.categories.includes(disco.genre)) {
+            this.categories.push(disco.genre);
+          }
+        });
       });
-    });
+    },
+
+    search() {
+      console.log(this.selectedCategory);
+      //   this.getData();
+    },
+  },
+  mounted() {
+    this.getData();
   },
 });
