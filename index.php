@@ -1,5 +1,9 @@
 
+<?php 
+include 'data.php';
+// var_dump($dischi);
 
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,13 +27,22 @@
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/2048px-Spotify_App_Logo.svg.png"
           alt=""
-          class=""
+          class="img1"
         />
          <select name="" id="" >
             <option value="">All</option>
             <option></option>
 
         </select>
+
+        <?php 
+          include __DIR__.'../partials/card.php'; 
+
+        ?>
+      
+      
+      
+      
       </div>
 
       

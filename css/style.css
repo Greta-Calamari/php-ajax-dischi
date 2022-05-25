@@ -2,7 +2,7 @@
     height: 70px;
     background-color: black;
   }
-  img{
+.img1{
     width: 2%;
     margin: 7px 10px;
     
@@ -10,13 +10,34 @@
 
 
   /* MAIN */
-
-  .bg-c{
-   background-color:#2e3a46;
-   height: 100vh; 
+.bg-c{
+   background-color:#1e2d3b;
+   
   }
+.card {
+  height: 400px;
+  background-color:#2e3a46 ;
+    
+}
+  
+h4 {
+text-transform: uppercase;
+color:white ;
+      
+  
+}
+.sub{
+  color: gray;
+}
 
-.col-lg-2 {
-    flex: 0 0 auto;
-    width: 19.666667%;
+.col-2 {
+  flex: 0 0 auto;
+  width: 19.666667%;
+}
+  
+    
+.img2 {
+
+  width: 150px;
+  margin: 5% auto;
 }

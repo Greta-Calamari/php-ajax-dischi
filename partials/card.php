@@ -1,22 +1,23 @@
-<?php 
-include __DIR__.'../index.php'; 
 
-?>
         
         
 <main class="bg-c">
-    <div class="row">
-        
-        <div class="col-6 col-md-4 col-lg-2 gy-5">
-            <div class="card my-5 text-center">
-                <img :src="item.poster" alt="">
-                <h4>{{item.title}}</h4>
-                <div class="sub">{{item.author}}</div>
-                <div class="sub">{{item.year}}</div>
+    <div class="container">
+        <div class="row d-flex">
+            <?php foreach($dischi as $disco){?> 
+            <div class="col-2">
+                <div class="card my-5 text-center">
+                    <img class="img2" src="<?php echo $disco['poster'] ?> " alt=""  class="w-50">
+                    <h4> <?php echo $disco['title'] ?></h4>
+                    <div class="sub"> <?php echo $disco['author'] ?></div>
+                    <div class="sub"><?php echo $disco['year'] ?></div>
+                </div>
+                
             </div>
-            
+            <?php } ?>
           </div>
-      </div>
+        </div>
+
     </div>
 </main>
     
