@@ -1,0 +1,22 @@
+.header{
+    height: 70px;
+    background-color: black;
+  }
+  img{
+    width: 2%;
+    margin: 7px 10px;
+    
+  }
+
+
+  /* MAIN */
+
+  .bg-c{
+   background-color:#2e3a46;
+   height: 100vh; 
+  }
+
+.col-lg-2 {
+    flex: 0 0 auto;
+    width: 19.666667%;
+}
