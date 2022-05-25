@@ -33,12 +33,12 @@
             <div class="container">
                     <div class="row d-flex">
                         
-                        <div class="col-2">
+                        <div class="col-2 "v-for="(disco,index) in dischi" :key="index">
                             <div class="card my-5 text-center">
-                                <img class="img2" src=" " alt=""  class="w-50">
-                                <h4> </h4>
-                                <div class="sub"></div>
-                                <div class="sub"></div>
+                                <img class="img2" :src="disco.poster" alt=""  class="w-50">
+                                <h4>{{disco.title}}</h4>
+                                <div class="sub">{{disco.author}}</div>
+                                <div class="sub">{{disco.year}}</div>
                             </div>
                             
                         </div>
